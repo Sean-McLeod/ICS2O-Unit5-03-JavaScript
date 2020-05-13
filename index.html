@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="age and movie">
+    <meta name="keywords" content="age, movie">
+    <meta name="author" content="sean mcleod">
+      <title>What Movies Can You Watch?</title>
+  </head>
+  <body>
+    <input id="bot" type="textbox">
+    <button onclick="myfunction()">Click Here</button>
+    <p>Type in your age to find out what type of movies you can watch!</p>
+    <br>
+    <p id="mid"></p>
+    <script>
+      function myfunction() {
+      let top 
+      top= document.getElementById("bot").value;
+      if (top>=18)
+      document.getElementById("mid").innerHTML="You can see an R movie alone."
+      else if (top>=13)
+      document.getElementById("mid").innerHTML="You can see a PG-13 movie alone."
+      else if (top>=5)
+      document.getElementById("mid").innerHTML="You can see a G or PG movie alone."
+      else
+      document.getElementById("mid").innerHTML="You are too young for any movies."
+      }
+    </script>
+  </body>
+</html>
